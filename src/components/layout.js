@@ -27,6 +27,9 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-easing="ease"
         style={{
           margin: `0 auto`,
           maxWidth: 960,
@@ -39,9 +42,6 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
     </>

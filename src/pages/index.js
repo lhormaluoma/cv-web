@@ -25,6 +25,10 @@ const IndexPage = () => (
       <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
       <Link to="/using-dsg">Go to "Using DSG"</Link>
     </p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <a href="/#team" title="Our team"><span>Team</span></a>
   </Layout>
 )
 

@@ -1,35 +1,55 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+  <section class="wrap-header" >
+  <div class = "socials">
+    <p>
+      <Link to="https://www.twitter.com">
+        Twitter
+      </Link>
+    </p>
+  </div>
+  <div class="header">
+  <div class="headertext"
+  
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
+    <h1>
+      <Link to="/">
+        {siteTitle}
+      </Link>
+    </h1>
+  </div>
+  <div class="navbox"
+
+  >
+  <div class="nav">
+    <h1>
+      <Link to="/">
+        CV
+      </Link>
+    </h1>
+    </div>
+    <div class="nav">
+    <h1>
+      <Link to="/">
+        Portfolio
+      </Link>
+    </h1>
+    </div>
+    <div class="nav">
+      <h1>
+        <AnchorLink to="/#team" title="Our team">
+          <span>Team</span>
+        </AnchorLink>
       </h1>
     </div>
-  </header>
-)
+  </div>
+  </div>
+</section>
+) 
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
