@@ -32,7 +32,9 @@ module.exports = {
       },
     },
     `gatsby-plugin-scroll-reveal`,
-    `gatsby-plugin-anchor-links`
+    `gatsby-plugin-anchor-links`,
+    'react-typing-animation',
+    'gatsby-background-image'
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
