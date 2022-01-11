@@ -4,6 +4,7 @@ import './header.css';
 import './layout.css';
 import { Link } from "gatsby"
 import Typing, { Backspace } from "react-typing-animation"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => {
   
@@ -19,6 +20,17 @@ const Header = ({ siteTitle }) => {
   <header className="header">
   <nav className="nav">
     <div className="logo">
+      <div style={{paddingRight:"1rem"}}>
+      <Link to = "../"><StaticImage
+        layout="constrained"
+        alt=""
+        src="../images/loh.png"
+        quality={[95]}
+        width={25}
+        formats={["auto", "webp", "avif"]}
+      /></Link>
+      </div>
+      <div>
       { <Typing>
           <h1>
             HORMIS
@@ -26,6 +38,7 @@ const Header = ({ siteTitle }) => {
             <Link to = "../">LEEVI HORMALUOMA</Link>
           </h1>
         </Typing> }
+      </div>
     </div>
 
     <div className="navigation">

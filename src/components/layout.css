@@ -84,6 +84,7 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 1.45rem;
   line-height: 1.1;
+  text-align: left;
 }
 mark {
   background-color: #ff0;
@@ -280,6 +281,7 @@ h3 {
   text-rendering: optimizeLegibility;
   font-size: 1.3rem;
   line-height: 1.1;
+  text-align: left;
 }
 h4 {
   margin-left: 10%;
