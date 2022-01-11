@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    margin-right: 5%;
+    z-index: 9999;
+    justify-content:right;
+    padding-bottom: 1rem;
+  }
+
+.socials{
+    margin-right: 1rem;
+}

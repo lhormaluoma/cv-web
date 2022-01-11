@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import React,{useEffect} from 'react';
+import React from 'react';
 import './header.css';
 import './layout.css';
 import { Link } from "gatsby"
@@ -7,26 +7,6 @@ import Typing, { Backspace } from "react-typing-animation"
 
 const Header = ({ siteTitle }) => {
   
-const [scrolled,setScrolled]=React.useState(false);
-
-const handleScroll=() => {
-    const offset=window.scrollY;
-    if(offset > 200 ){
-      setScrolled(true);
-    }
-    else{
-      setScrolled(false);
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll',handleScroll)
-  })
-  let headerClasses=['header'];
-  if(scrolled){
-    headerClasses.push('scrolled');
-  }
-
   Header.propTypes = {
     siteTitle: PropTypes.string,
   }
@@ -36,30 +16,30 @@ const handleScroll=() => {
   }
 
   return (      
-  
-  <header className={headerClasses.join(" ")}>
-
+  <header className="header">
+  <nav className="nav">
     <div className="logo">
       { <Typing>
           <h1>
-            &gt; Hormis
+            HORMIS
             <Backspace count={6} delay={750} />
-            <Link to = "../">Leevi Hormaluoma_</Link>
+            <Link to = "../">LEEVI HORMALUOMA</Link>
           </h1>
         </Typing> }
     </div>
-    <nav className="navigation">
-      {<h1><Link to = "../">CV</Link></h1>}
-    </nav>
 
-    <nav className="navigation">
-      {<h1><Link to = "../404/">Portfolio</Link></h1>}
-    </nav>
+    <div className="navigation">
+      {<h1><Link to = "../" activeClassName="active">CV</Link></h1>}
+    </div>
 
-    <nav className="navigation">
-      {<h1><Link to = "../page-2/">Contact me</Link></h1>}
-    </nav>
+    <div className="navigation">
+      {<h1><Link to = "../404/" activeClassName="active">Portfolio</Link></h1>}
+    </div>
 
+    <div className="navigation">
+      {<h1><Link to = "../page-2/" activeClassName="active">Contact me</Link></h1>}
+    </div>
+  </nav>
   </header>
 )
 }

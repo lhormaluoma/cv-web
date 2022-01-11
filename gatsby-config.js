@@ -34,7 +34,17 @@ module.exports = {
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-anchor-links`,
     'react-typing-animation',
-    'gatsby-background-image'
+    'gatsby-background-image',
+    {
+    resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto\:300,400,400i,700`,
+          'Montserrat\:300,400,400i,700'
+        ],
+        display: 'swap'
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
