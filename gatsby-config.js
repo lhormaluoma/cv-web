@@ -31,7 +31,13 @@ module.exports = {
         icon: `src/images/l_icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-scroll-reveal`,
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+      threshold: 0.1, // Percentage of an element's area that needs to be visible to launch animation
+      once: true, // Defines if animation needs to be launched once
+      }
+    },
     `gatsby-plugin-anchor-links`,
     'react-typing-animation',
     'gatsby-background-image',
@@ -40,7 +46,7 @@ module.exports = {
       options: {
         fonts: [
           `Roboto\:300,400,400i,700`,
-          'Montserrat\:300,400,400i,700'
+          'Montserrat\:300,400,400i,500,700'
         ],
         display: 'swap'
       }

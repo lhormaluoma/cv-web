@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => {
     </div>
 
     <div className="navigation">
-      {<h1><Link to = "../404/" activeClassName="active">Portfolio</Link></h1>}
+      {<h1><Link to = "../portfolio/" activeClassName="active">Portfolio</Link></h1>}
     </div>
 
     <div className="navigation">

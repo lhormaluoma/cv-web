@@ -24,5 +24,10 @@
 }
 
 .active {
-  font-weight: bold;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 0.3rem;
+  border-left-style: none;
+  border-right-style: none;
 }

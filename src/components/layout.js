@@ -33,6 +33,11 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+
+        <div style = {{paddingTop:"2rem"}}>
+          <body style={{textAlign:"center"}}>by Leevi Hormaluoma</body>
+          <body style={{textAlign:"center"}}>made with Gatsby</body>
+        </div>
       </div>
       <Footer/>
     </>
