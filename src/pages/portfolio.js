@@ -14,9 +14,7 @@ return(
       <div className="contentbody">
         <div className="contenttext">
         <div style={{ display: "grid"}}>
-    <Link to = "../landscape" style={{
-          gridArea: "1/1",
-        }}><StaticImage
+    <Link to = "../portfolio/landscape"><StaticImage
         layout="constrained"
         alt=""
         src="../images/landscape.png"
@@ -27,12 +25,27 @@ return(
     </div>
     <div className="contenttext">
         <div style={{ display: "grid"}}>
-    <Link to = "../people" style={{
-          gridArea: "1/1",
-        }}><StaticImage
+    <Link to = "../portfolio/people"><StaticImage
         layout="constrained"
         alt=""
         src="../images/people.png"
+        quality={[95]}
+        formats={["auto", "webp", "avif"]}
+      /> </Link>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div className="content"> 
+      <div className="contenthead">
+      </div>
+      <div className="contentbody">
+        <div className="contenttext">
+        <div style={{ display: "grid"}}>
+    <Link to = "../portfolio/events"><StaticImage
+        layout="constrained"
+        alt=""
+        src="../images/events.png"
         quality={[95]}
         formats={["auto", "webp", "avif"]}
       /> </Link>

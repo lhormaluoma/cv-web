@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => {
         alt=""
         src="../images/loh.png"
         quality={[95]}
-        width={25}
+        width={24}
         formats={["auto", "webp", "avif"]}
       /></Link>
       </div>
@@ -46,11 +46,11 @@ const Header = ({ siteTitle }) => {
     </div>
 
     <div className="navigation">
-      {<h1><Link to = "../portfolio/" activeClassName="active">Portfolio</Link></h1>}
+      {<h1><Link to = "../portfolio/" activeClassName="active">Photos</Link></h1>}
     </div>
 
     <div className="navigation">
-      {<h1><Link to = "../page-2/" activeClassName="active">Contact me</Link></h1>}
+      {<h1><Link to = "../contact/" activeClassName="active">Contact me</Link></h1>}
     </div>
   </nav>
   </header>
