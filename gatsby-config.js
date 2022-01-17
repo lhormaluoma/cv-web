@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `> Leevi Hormaluoma`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Hey! You've landed on my personal website. Here you can find my CV, contact details and a photo portfolio.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://www.leevihormaluoma.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
