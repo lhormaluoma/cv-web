@@ -74,7 +74,6 @@ const IndexPage = () => {
                 placeholder="blurred"
                 layout="constrained"
             />
-        <p style = {{textAlign:"right"}}>Riisitunturi, 2022, Canon EOS 80D, 50mm f1.8</p>
         </div>
       </div>
     </div>
@@ -134,13 +133,13 @@ const IndexPage = () => {
                 placeholder="blurred"
                 layout="constrained"
             />
-        <p style = {{textAlign:"left"}}>2021, Canon EOS 80D, 50mm f1.8</p></div>
+        </div>
         <div className="contenttext">
         <h5>Oulunkylä Upper Secondary School (OYK) student and alumni board</h5>
         <h6>Chairperson, Head of Communications, Head of Communications for the Alumni organisation</h6>
         <p>My days as an active in the field of student boards and organisations began in upper secondary school, where I began as one of three Heads of Communication. After updating social media for a year I wanted to take on the responsibilities of becoming a chairperson</p>
         <p>As a chairperson I led a 12 member board that looked after our students by organising events, participating in school meetings and offering opportunities such as better deals for drivers education. After graduating I produced content for the school's alumni organisation as the Head of Communications</p>
-        </div>
+      </div>
       </div>
       <div className="content"
     data-sal="slide-up"
@@ -193,6 +192,7 @@ const IndexPage = () => {
       </div>
     </div>
     </div>
+    <body style={{textAlign:"center", paddingBottom:"1rem", paddingTop:"2rem"}}><Link to = "https://drive.google.com/file/d/1LzPSWgmFGIl2LFcFpRNIlmRgq7ps_zhk/view?usp=sharing" target="_blank">A downloadable version of my CV can be found here</Link></body>
   </Layout>
 )
 }

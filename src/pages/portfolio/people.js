@@ -1,46 +1,72 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import Layout from "../../components/layout"
 
 const People = () => (
   <Layout>
+    <div className="portfolio">
+    <div className="portfoliolayout">
     <div className="portfolioimg">
-    <StaticImage
-        layout="constrained"
+        <Zoom><StaticImage
+        layout="full-width"
         alt=""
         src="../../images/IMG_1260.jpg"
         quality={[95]}
         formats={["auto", "webp", "avif"]}
-      />
-      </div>
-      <div className="portfoliotext">
-          <p style={{marginBottom:"0.1rem", color:"#E9E9E6"}}>Roihuvuori 2021, Canon EOS 80D, 50mm f1.8</p>
+      /></Zoom>
       </div>
       <div className="portfolioimg">
-    <StaticImage
-        layout="constrained"
-        alt=""
-        src="../../images/IMG_0623.jpg"
-        quality={[95]}
-        formats={["auto", "webp", "avif"]}
-      />
-      </div>
-      <div className="portfoliotext">
-          <p style={{marginBottom:"0.1rem", color:"#E9E9E6"}}>Riisitunturi 2022, Canon EOS 80D, 50mm f1.8</p>
-      </div>
-      <div className="portfolioimg">
-    <StaticImage
-        layout="constrained"
+        <Zoom><StaticImage
+        layout="full-width"
         alt=""
         src="../../images/IMG_5861.jpg"
         quality={[95]}
         formats={["auto", "webp", "avif"]}
-      />
+      /></Zoom>
       </div>
-      <div className="portfoliotext">
-          <p style={{marginBottom:"0.1rem", color:"#E9E9E6"}}>Jätkäsaari 2021, Canon EOS 80D, 50mm f1.8</p>
+      <div className="portfolioimg">
+        <Zoom><StaticImage
+        layout="full-width"
+        alt=""
+        src="../../images/IMG_0623.jpg"
+        quality={[95]}
+        formats={["auto", "webp", "avif"]}
+      /></Zoom>
       </div>
+    </div>
+    <div className="portfoliolayout">
+    <div className="portfolioimg">
+    <Zoom><StaticImage
+        layout="full-width"
+        alt=""
+        src="../../images/2864_.jpg"
+        quality={[95]}
+        formats={["auto", "webp", "avif"]}
+      /></Zoom>
+      </div>
+      <div className="portfolioimg">
+    <Zoom><StaticImage
+        layout="full-width"
+        alt=""
+        src="../../images/1023_.jpg"
+        quality={[95]}
+        formats={["auto", "webp", "avif"]}
+      /></Zoom>
+      </div>
+      <div className="portfolioimg">
+        <Zoom><StaticImage
+        layout="full-width"
+        alt=""
+        src="../../images/IMG_9663.jpg"
+        quality={[95]}
+        formats={["auto", "webp", "avif"]}
+      /></Zoom>
+      </div>
+    </div>
+    </div>
   </Layout>
 )
 

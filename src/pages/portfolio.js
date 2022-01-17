@@ -9,10 +9,8 @@ const Portfolio = () => {
 return(
   <Layout>
     <div className="content"> 
-      <div className="contenthead">
-      </div>
       <div className="contentbody">
-        <div className="contenttext">
+        <div className="portfoliolinks">
         <div style={{ display: "grid"}}>
     <Link to = "../portfolio/landscape"><StaticImage
         layout="constrained"
@@ -20,10 +18,11 @@ return(
         src="../images/landscape.png"
         quality={[95]}
         formats={["auto", "webp", "avif"]}
+        className="hover-zoom"
       /> </Link>
     </div>
     </div>
-    <div className="contenttext">
+    <div className="portfoliolinks">
         <div style={{ display: "grid"}}>
     <Link to = "../portfolio/people"><StaticImage
         layout="constrained"
@@ -31,16 +30,11 @@ return(
         src="../images/people.png"
         quality={[95]}
         formats={["auto", "webp", "avif"]}
+        className="hover-zoom"
       /> </Link>
     </div>
     </div>
-    </div>
-    </div>
-    <div className="content"> 
-      <div className="contenthead">
-      </div>
-      <div className="contentbody">
-        <div className="contenttext">
+    <div className="portfoliolinks">
         <div style={{ display: "grid"}}>
     <Link to = "../portfolio/events"><StaticImage
         layout="constrained"
@@ -48,6 +42,7 @@ return(
         src="../images/events.png"
         quality={[95]}
         formats={["auto", "webp", "avif"]}
+        className="hover-zoom"
       /> </Link>
     </div>
     </div>

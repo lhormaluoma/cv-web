@@ -41,12 +41,14 @@ module.exports = {
     `gatsby-plugin-anchor-links`,
     'react-typing-animation',
     'gatsby-background-image',
+    'react-medium-image-zoom',
     {
     resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           `Roboto\:300,400,400i,700`,
-          'Montserrat\:300,400,400i,500,700'
+          'Montserrat\:300,400,400i,500,700',
+          'Roboto Mono'
         ],
         display: 'swap'
       }

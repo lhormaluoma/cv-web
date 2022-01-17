@@ -1,6 +1,15 @@
 body::-webkit-scrollbar {
-    width: 0.2rem;
+    width: 0.4rem;
     padding: 0.2rem;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+     transition:.5s;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: rgb(57, 74, 75);
   }
 
   html {
@@ -13,6 +22,6 @@ body::-webkit-scrollbar {
   }
 
   body::-webkit-scrollbar-thumb {
-    border-radius: 0.1rem;
+    border-radius: 0.5rem;
     background: rgb(151, 151, 151);
   }

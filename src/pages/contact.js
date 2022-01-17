@@ -29,7 +29,6 @@ const SecondPage = () => (
         <textarea name="message" id="message" rows="5" />
       </label>
       <button type="submit">Send</button>
-      <input type="reset" value="Clear" />
       </div>
     </form>
     <div style = {{paddingTop:"2rem"}}>

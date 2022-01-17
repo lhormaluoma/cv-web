@@ -1,34 +1,42 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 import Layout from "../../components/layout"
 
 const Events = () => (
   <Layout>
+        <div className="portfolio">
+    <div className="portfoliolayout">
     <div className="portfolioimg">
-    <StaticImage
-        layout="constrained"
-        alt=""
-        src="../../images/IMG_8934.jpg"
-        quality={[95]}
-        formats={["auto", "webp", "avif"]}
-      />
-      </div>
-      <div className="portfoliotext">
-          <p style={{marginBottom:"0.1rem", color:"#E9E9E6"}}>Otaniemi 2021, Canon EOS 80D, 42mm f4.5</p>
-      </div>
-    <div className="portfolioimg">
-    <StaticImage
+        <Zoom><StaticImage
         layout="constrained"
         alt=""
         src="../../images/IMG_5690.jpg"
         quality={[95]}
         formats={["auto", "webp", "avif"]}
-      />
+      /></Zoom>
       </div>
-      <div className="portfoliotext">
-          <p style={{marginBottom:"0.1rem", color:"#E9E9E6"}}>Otaniemi 2021, Canon EOS 80D, 50mm f1.8</p>
+      <div className="portfolioimg">
+        
       </div>
+    </div>
+    <div className="portfoliolayout">
+    <div className="portfolioimg">
+    <Zoom><StaticImage
+        layout="constrained"
+        alt=""
+        src="../../images/IMG_8934.jpg"
+        quality={[95]}
+        formats={["auto", "webp", "avif"]}
+      /></Zoom>
+      </div>
+    <div className="portfolioimg">
+
+      </div>
+    </div>
+    </div>
   </Layout>
 )
 

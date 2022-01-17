@@ -10,7 +10,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: monospace;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -364,12 +365,12 @@ a:visited {
 
 a:hover {
   color: black;
-  text-decoration: underline;
+  font-weight: 500;
 }
 
 a:active {
   color: black;
-  text-decoration: underline;
+  font-weight: 500;
 }
 
 .sectionimg {
@@ -393,10 +394,11 @@ a:active {
 .contentbody {
   display: flex;
   justify-content:start;
+  flex:1;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 3rem;
-  padding-bottom:2rem;
+  margin-top: 1rem;
+  padding-bottom:1rem;
 }
 
 .contenthead {
@@ -407,15 +409,16 @@ a:active {
 }
 
 .contenttext {
+  margin:1rem;
   text-align: left;
-  margin-right: 2rem;
-  flex: 0 0 50%;
+  flex: 1;
 }
 
 /* Container for skill bars */
 .container {
   width: 100%; /* Full width */
   background-color: #E9E9E6; /* Grey background */
+  border-radius: 0.5rem;
 }
 
 .skills {
@@ -427,13 +430,33 @@ a:active {
   padding-right: 1rem;
 }
 
-.portfolioimg {
-  margin-left: 20%;
-  margin-right: 20%;
-  flex:0 0 50%
+.finnish {width: 100%; background-color: #8b4f68;border-style: solid;border-width: 0.1rem;border-color:#E9E9E6;margin-bottom: 0.7rem;;margin-top: 0.3rem;border-radius: 0.5rem;}
+.english {width: 100%; background-color: #8b4f68;border-style: solid;border-width: 0.1rem;border-color:#E9E9E6;margin-bottom: 0.7rem;;margin-top: 0.3rem;border-radius: 0.5rem;}
+.swedish {width: 65%; background-color: #8b4f68;border-style: solid;border-width: 0.1rem;border-color:#E9E9E6;margin-bottom: 0.7rem;;margin-top: 0.3rem;border-radius: 0.5rem;}
+.german {width: 50%; background-color: #8b4f68;border-style: solid;border-width: 0.1rem;border-color:#E9E9E6;margin-bottom: 0.7rem;;margin-top: 0.3rem;border-radius: 0.5rem;}
+
+.portfoliolinks {
+  margin:1rem;
+  text-align: left;
+  flex: 1;
 }
-.verticalimg {
+
+.portfolio {
   display: flex;
+  margin-left: 5%;
+  margin-right: 5%
+}
+
+.portfoliolayout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin:1rem;
+}
+
+.portfolioimg {
+  width: 100%;
+  margin: 1rem;
 }
 
 .portfoliotext {
@@ -444,6 +467,7 @@ a:active {
   text-align: center;
   margin-bottom: 1rem;
 }
+
 .forms {
   margin-top:2rem;
   margin-left: 20%;
@@ -452,29 +476,49 @@ a:active {
   justify-content: flex-start;
   flex-direction: column;
 }
+
 .field {
   text-align: center;
 }
+
 input {
   width: 100%;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   box-sizing: border-box;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
 }
+
 label {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 1rem;
 }
+
 button {
   margin-top: 2rem;
+  -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+     transition:.5s;
 }
+.forms button:hover {
+  background-color: #9b9b9b;
+  color:#E9E9E6
+}
+
 textarea {
   margin-top: 0.5rem;
   width: 100%;
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
 }
 
-.finnish {width: 100%; background-color: #8b4f68;border-style: solid;border-width: 0.1rem;border-color:#E9E9E6;margin-bottom: 0.7rem;;margin-top: 0.3rem;}
-.english {width: 100%; background-color: #8b4f68;border-style: solid;border-width: 0.1rem;border-color:#E9E9E6;margin-bottom: 0.7rem;;margin-top: 0.3rem;}
-.swedish {width: 65%; background-color: #8b4f68;border-style: solid;border-width: 0.1rem;border-color:#E9E9E6;margin-bottom: 0.7rem;;margin-top: 0.3rem;}
-.german {width: 50%; background-color: #8b4f68;border-style: solid;border-width: 0.1rem;border-color:#E9E9E6;margin-bottom: 0.7rem;;margin-top: 0.3rem;}
+[data-rmiz-wrap='visible'],
+[data-rmiz-wrap='hidden'] {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
